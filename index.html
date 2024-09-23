@@ -14,7 +14,7 @@
   <body class="lexend">
       <header class="sticky top-0">
           <nav class="flex justify-between items-center bg-gray-100 p-4 px-32">
-            <button class="font-bold bg-green-500 px-6 py-2 rounded-md">Blog</button>
+            <button class="font-bold bg-green-500 px-6 py-2 rounded-md"><a href="http://127.0.0.1:5501/blog.html">Blog</a></button>
           <div class="flex items-center justify-center gap-3">
             <img src="assets/logo.png" alt="Donate Bangladesh Logo" class="h-10 w-10">
             <h1 class="font-bold">Donate Bangladesh</h1>
@@ -155,15 +155,31 @@
          </div>
          <!-- history section start -->
         </section>
-
+          <!-- popup button start -->
+          <div class="bg-gray-600 flex justify-center items-start h-screen">
+            <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>
+            <div id="popup" class="fixed inset-0 flex items-center justify-center">
+              <div class="bg-white rounded-lg shadow-lg w-96 p-6 relative">
+                <h2 class="text-3xl font-semibold mb-4 text-center">Congregates</h2>
+                  <h1 class="flex justify-center mt-4 mb-5"><img src="./assets/coin.png" alt=""></h1>
+                <p class="text-gray-600 mb-4 text-center">You Have Donated for Humankind!</p>
+                  <h3 class="text-xl font-bold text-center">Successfully</h3>
+                <button id="closePopup" class="ml-24 bg-red-500 text-white px-4 py-2 mt-6 rounded hover:bg-red-600">
+                  close confirmation
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- popup button end -->
          </main>
   
       <footer class="bg-gray-200 text-center p-4">
-          &copy; 2023 Donate Bangladesh
+          &copy; 2024 Donate Bangladesh
       </footer>
 
       <script src="./js/utilites.js"></script>
       <script src="./js/addMoney.js"></script>
       <script src="./js/cashOut.js"></script>
+      <script src="./js/popUp.js"></script>
   </body>
   </html>
