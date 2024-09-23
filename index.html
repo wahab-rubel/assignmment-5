@@ -23,19 +23,30 @@
               <div class="flex justify-center gap-3">
               <img src="./assets/coin.png" alt="">
               <span id="cash-out" class="text-gray-700 font-bold">5500</span>
+              <span>BDT</span>
               </div>
           </div>
           </nav>
-          <section class="sticky top-0 flex items-center justify-center mt-16">
-            <div class="sticky top-0 flex space-x-4">
-              <button id="btn-donation" class="btn bg-green-400 active">Donation</button>
-              <button id="btn-history" class="btn ">History</button>
+          <!-- donate button and history button start -->
+          <div class="flex justify-center mt-8 mb-8 gap-4">
+            <button
+              id="donation-tab"
+              class="px-5 py-2 rounded-lg focus:outline-none transition-colors duration-200 text-white font-semibold bg-gradient-to-r from-blue-500 to-purple-600"
+            >
+              Donation
+            </button>
+            <button
+              id="history-tab"
+              class="px-5 py-2 rounded-lg focus:outline-none transition-colors duration-200 text-gray-600 font-semibold"
+            >
+              History
+            </button>
           </div>
-          </section>
+        <!-- donate button and history button end -->
       </header>
       <main class="relative">
         <section class="container justify-center items-center ml-36 px-40  mt-12 mb-24">
-        <div class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
+        <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
           <div class="p-12">
             <img src="./assets/noakhali.png" alt="Album" />
           </div>
@@ -57,60 +68,93 @@
               </div>
               </div>
             </div>
+            <!-- history section start -->
+            <div id="history-form"
+            class="bg-gradient-to-br hidden from-blue-50
+           to-purple-50 p-4 rounded-lg shadow-md border border-blue-200">
+           <h3
+             class="text-lg font-semibold mb-4 text-center text-transparent 
+             bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+             🕒 Expense History
+           </h3>
+           <div id="history-list" class="grid grid-cols-2 gap-3"></div>
+         </div>
+         <!-- history section start -->
         </section>
 
         <section class="container justify-center items-center ml-36 px-40  mt-12 mb-24">
-          <div class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
-            <div class="p-12">
-              <img src="./assets/feni.png" alt="Album" />
+        <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
+          <div class="p-12">
+            <img src="./assets/feni.png" alt="Album" />
+          </div>
+          <div class="p-6">
+            <button class="flex gap-2 font-bold bg-gray-500 px-4 py-1 rounded-md">
+              <img src="./assets/coin.png" alt="">
+             <div>
+              <span id="account-balance" class="text-white">0</span>
+              <span>BDT</span>
+             </div>
+            </button>
+            <h3 class="text-xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h3>
+            <p class="text-gray-700 mb-4">Thousands of people have been affected by the floods in Noakhali district. <br> Their  houses, lands and livelihoods were destroyed. Your donation <br> is critical to helping people affected by this disaster. Food and Drinks: <br> Food and drinks will be provided to the flood affected people. <br> Sharanath Camp: Sharanath camp will be set up for flood affected people. <br> Medical Assistance: Medical assistance will be provided to flood affected people. <br>
+            Rehabilitation: Assistance will be provided for rehabilitation of flood affected people.
+            How to donate:</p>
+            <div class="justify-between items-center mb-4">
+              <input id="input-add-money" type="number" class="border text-center rounded-md w-full p-2" placeholder="Donation Amount">
+              <button id="btn-add-money" class="btn btn-warning w-full mt-3">Donate Now</button>
+              </div>
+              </div>
             </div>
-            <div class="p-6">
-              <button class="flex gap-2 font-bold bg-gray-500 px-4 py-1 rounded-md">
-                <img src="./assets/coin.png" alt="">
-               <div>
-                <span id="account-balance" class="text-white">0</span>
-                <span>BDT</span>
-               </div>
-              </button>
-              <h3 class="text-xl font-bold mb-2">Donate for Flood Relief in Feni,Bangladesh</h3>
-              <p class="text-gray-700 mb-4">Thousands of people have been affected by the floods in Noakhali district. <br> Their  houses, lands and livelihoods were destroyed. Your donation <br> is critical to helping people affected by this disaster. Food and Drinks: <br> Food and drinks will be provided to the flood affected people. <br> Sharanath Camp: Sharanath camp will be set up for flood affected people. <br> Medical Assistance: Medical assistance will be provided to flood affected people. <br>
-              Rehabilitation: Assistance will be provided for rehabilitation of flood affected people.
-              How to donate:</p>
-              <div class="justify-between items-center mb-4">
-                <input id="input-add-money" type="number" class="border text-center rounded-md w-full p-2" placeholder="Donation Amount">
-                <button id="btn-add-money" class="btn btn-warning w-full mt-3">Donate Now</button>
-                </div>
-                </div>
-              </div>
-          </section>
+            <!-- history section start -->
+            <div id="history-form"
+            class="bg-gradient-to-br hidden from-blue-50
+           to-purple-50 p-4 rounded-lg shadow-md border border-blue-200">
+           <h3
+             class="text-lg font-semibold mb-4 text-center text-transparent 
+             bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+             🕒 Expense History
+           </h3>
+           <div id="history-list" class="grid grid-cols-2 gap-3"></div>
+         </div>
+         <!-- history section start -->
+        </section>
 
-          <section class="container justify-center items-center ml-36 px-40  mt-12 mb-24">
-            <div class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
-              <div class="p-12">
-                <img src="./assets/quota-protest.png" alt="Album" />
+        <section class="container justify-center items-center ml-36 px-40  mt-12 mb-24">
+        <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
+          <div class="p-12">
+            <img src="./assets/quota-protest.png" alt="Album" />
+          </div>
+          <div class="p-6">
+            <button class="flex gap-2 font-bold bg-gray-500 px-4 py-1 rounded-md">
+              <img src="./assets/coin.png" alt="">
+             <div>
+              <span id="account-balance" class="text-white">0</span>
+              <span>BDT</span>
+             </div>
+            </button>
+            <h3 class="text-xl font-bold mb-2">Donate for Flood at Noakhali, Bangladesh</h3>
+            <p class="text-gray-700 mb-4">Thousands of people have been affected by the floods in Noakhali district. <br> Their  houses, lands and livelihoods were destroyed. Your donation <br> is critical to helping people affected by this disaster. Food and Drinks: <br> Food and drinks will be provided to the flood affected people. <br> Sharanath Camp: Sharanath camp will be set up for flood affected people. <br> Medical Assistance: Medical assistance will be provided to flood affected people. <br>
+            Rehabilitation: Assistance will be provided for rehabilitation of flood affected people.
+            How to donate:</p>
+            <div class="justify-between items-center mb-4">
+              <input id="input-add-money" type="number" class="border text-center rounded-md w-full p-2" placeholder="Donation Amount">
+              <button id="btn-add-money" class="btn btn-warning w-full mt-3">Donate Now</button>
               </div>
-              <div class="p-6">
-                <button class="flex gap-2 font-bold bg-gray-500 px-4 py-1 rounded-md">
-                  <img src="./assets/coin.png" alt="">
-                 <div>
-                  <span id="account-balance" class="text-white">0</span>
-                  <span>BDT</span>
-                 </div>
-                </button>
-                <h3 class="text-xl font-bold mb-2">Aid for Injured in the Quota Movement</h3>
-                <p class="text-gray-700 mb-4">Thousands of people have been affected by the floods in Noakhali district. <br> Their  houses, lands and livelihoods were destroyed. Your donation <br> is critical to helping people affected by this disaster. Food and Drinks: <br> Food and drinks will be provided to the flood affected people. <br> Sharanath Camp: Sharanath camp will be set up for flood affected people. <br> Medical Assistance: Medical assistance will be provided to flood affected people. <br>
-                Rehabilitation: Assistance will be provided for rehabilitation of flood affected people.
-                How to donate:</p>
-                <div class="justify-between items-center mb-4">
-                  <input id="input-add-money" type="number" class="border text-center rounded-md w-full p-2" placeholder="Donation Amount">
-                  <button id="btn-add-money" class="btn btn-warning w-full mt-3">Donate Now</button>
-                  </div>
-                  </div>
-                </div>
-            </section>
-
-          <section class="history hidden">
-          </section>
+              </div>
+            </div>
+            <!-- history section start -->
+            <div id="history-form"
+            class="bg-gradient-to-br hidden from-blue-50
+           to-purple-50 p-4 rounded-lg shadow-md border border-blue-200">
+           <h3
+             class="text-lg font-semibold mb-4 text-center text-transparent 
+             bg-clip-text bg-gradient-to-r from-blue-600 to-purple-600">
+             🕒 Expense History
+           </h3>
+           <div id="history-list" class="grid grid-cols-2 gap-3"></div>
+         </div>
+         <!-- history section start -->
+        </section>
 
          </main>
   
