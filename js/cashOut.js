@@ -31,13 +31,31 @@ historyTab.addEventListener('click', function(){
       "to-purple-600",
     );
 
-    const historyForm = document.getElementById('history-form');
-     historyForm.classList.remove('hidden');
-
+    document.getElementById('history-form').classList.remove('hidden');
     document.getElementById('donation-form').classList.add('hidden');
     donationTab.add('text-gray-600')
 
   })
 
+  donationTab.addEventListener('click', function(){
+    donationTab.classList.add(
+      "text-white",
+      "bg-gradient-to-r",
+      "from-blue-500",
+      "to-purple-600",
+    );
+    historyTab.classList.remove(
+      "text-white",
+      "bg-gradient-to-r",
+      "from-blue-500",
+      "to-purple-600",
+    );
+    document.getElementById('donation-form').classList.remove('hidden');
+    document.getElementById('history-form').classList.add('hidden');
+
+
+  })
+
+  
 
 
