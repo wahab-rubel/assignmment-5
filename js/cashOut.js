@@ -37,18 +37,6 @@ historyTab.addEventListener('click', function(){
     document.getElementById('donation-form').classList.add('hidden');
     donationTab.add('text-gray-600')
 
-    
-    const historyItem = document.createElement('div');
-     historyItem.classNames = 'bg-base-100 w-96 shadow-xl border';
-     
-     historyItem.innerHTML = `
-     <p>Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-     <p class="text-xl font-bold">${new Date().toLocaleDateString()}</p>
-     <p class="text-xl font-bold">${balance.toFixed(2)}</p>
-     `
-     const historyContainer = document.getElementById('history-list');
-     historyContainer.insertBefore(historyItem, historyContainer.firstChild);
-    
   })
 
 

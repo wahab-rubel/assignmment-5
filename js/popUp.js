@@ -6,7 +6,7 @@ const popup = document.getElementById('popup');
 
 
 openPopupButton.addEventListener('click', function() {
-  overlay.classList.remove('hidden');
+  overlay.classList.add('hidden');
   popup.classList.remove('hidden');
 });
 
