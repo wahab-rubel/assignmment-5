@@ -7,7 +7,7 @@ const popup = document.getElementById('popup');
 
 openPopupButton.addEventListener('click', function() {
   overlay.classList.add('hidden');
-  popup.classList.remove('hidden');
+  popup.classList.add('hidden');
 });
 
 
@@ -20,4 +20,5 @@ closePopupButton.addEventListener('click', function() {
 overlay.addEventListener('click', function() {
   overlay.classList.add('hidden');
   popup.classList.add('hidden');
+
 });
