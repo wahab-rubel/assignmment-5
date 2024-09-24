@@ -1,6 +1,5 @@
 
 function getInputValueById() {
-console.log('will get input value by id');
 const addMoney =document.getElementById('input-add-money').value;
 return addMoney;
 }
