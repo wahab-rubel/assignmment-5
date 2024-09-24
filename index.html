@@ -12,10 +12,10 @@
   <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body class="lexend">
-      <header class="sticky top-0">
-          <navbar class="flex justify-between items-center bg-gray-100 p-6 lg:p-4 lg:px-32">
+      <header class="sticky top-0 z-50">
+          <nav class="flex justify-between items-center bg-gray-100 p-6 lg:p-4 lg:px-32">
           <button class="font-bold bg-green-500 px-6 py-2 rounded-md"><a href="http://127.0.0.1:5501/blog.html">Blog</a></button>
-          <div class="flex items-center justify-center gap-3">
+          <div class="flex items-center justify-center gap-3 ms-2 sm:text-center">
           <img src="assets/logo.png" alt="Donate Bangladesh Logo" class="h-10 w-10">
           <h1 class="font-bold">Donate Bangladesh</h1>
           </div>
@@ -26,7 +26,7 @@
               <span>BDT</span>
               </div>
           </div>
-          </navbar>
+          </nav>
           <!-- donate button and history button start -->
           <div class="flex justify-center mt-8 mb-8 gap-4">
             <button
@@ -44,8 +44,8 @@
           </div>
         <!-- donate button and history button end -->
       </header>
-      <main class="container">
-        <section class="container w-full flex justify-center items-center lg:ml-36 lg:px-40  lg:mt-12 lg:mb-24">
+      <main class="container mx-auto">
+        <section class="container w-full flex justify-center items-center lg:px-40 lg:mt-12 lg:mb-24">
         <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
           <div class="p-12">
             <img src="./assets/noakhali.png" alt="Album" />
@@ -82,7 +82,7 @@
          <!-- history section start -->
         </section>
 
-        <section class="container w-full flex justify-center items-center lg:ml-36 lg:px-40  lg:mt-12 lg:mb-24">
+        <section class="container w-full flex justify-center items-center lg:px-40  lg:mt-12 lg:mb-24">
         <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
           <div class="p-12">
             <img src="./assets/feni.png" alt="Album" />
@@ -117,7 +117,7 @@
          <!-- history section start -->
         </section>
 
-        <section class="container w-full flex justify-center items-center lg:ml-36 lg:px-40  lg:mt-12 lg:mb-24">
+        <section class="container w-full flex justify-center items-center lg:px-40  lg:mt-12 lg:mb-24">
         <div id="donation-form" class="justify-center items-center card lg:card-side bg-base-100 shadow-xl border">
           <div class="p-12">
             <img src="./assets/quota-protest.png" alt="Album" />
@@ -157,7 +157,7 @@
           <!-- popup button start -->
           <div class="flex justify-center items-start">
             <div id="overlay" class="fixed inset-0 bg-black bg-opacity-50 hidden"></div>
-            <div id="popup" class="fixed inset-0 flex items-center justify-center">
+            <div id="popup" class="fixed inset-0 flex items-center justify-center hidden">
               <div class="bg-white rounded-lg shadow-lg w-96 p-6 relative">
                 <h2 class="text-3xl font-semibold mb-4 text-center">Congregates</h2>
                   <h1 class="flex justify-center mt-4 mb-5"><img src="./assets/coin.png" alt=""></h1>
@@ -174,7 +174,7 @@
   
          <footer class="sticky bottom-0 footer footer-center bg-base-300 text-base-content p-4">
           <aside>
-            <p>Copyright © {new Date().getFullYear()} - All right reserved by ACME Industries Ltd</p>
+            <p>Copyright © 2024 - All right reserved by Donate Bangladesh</p>
           </aside>
         </footer>
 
