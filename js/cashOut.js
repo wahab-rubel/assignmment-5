@@ -4,6 +4,11 @@ document.getElementById('btn-add-money')
   
 
 const cashOut = getInputFieldValueById('input-add-money');
+
+if(cashOut <= 0 || isNaN(cashOut)){
+  alert('Invalid cash');
+  return;
+} 
   
 const balance = getTextFieldValueById('cash-out');
 const newBalance = balance - cashOut;

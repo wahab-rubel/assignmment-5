@@ -5,6 +5,11 @@ event.preventDefault();
 
 const addMoney = getInputFieldValueById('input-add-money');
 
+if(addMoney <= 0 || isNaN(addMoney)){
+    alert('Please enter a valid amount');
+    return;
+}
+
 const balance = getTextFieldValueById('account-balance');
 const newBalance = addMoney + balance;
 document.getElementById('account-balance').innerText = newBalance.toFixed(2);
