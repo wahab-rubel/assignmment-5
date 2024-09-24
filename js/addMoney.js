@@ -15,17 +15,20 @@ const newBalance = addMoney + balance;
 document.getElementById('account-balance').innerText = newBalance.toFixed(2);
 
 
-    const historyItem = document.createElement('div');
-     historyItem.classNames = 'bg-base-100 w-96 shadow-xl border';
-  
+const historyItem = document.createElement('div');
+ historyItem.classNames = 'bg-base-100 w-full sm:w-96 shadow-xl border p-4';
+    
+ const currentDateTime = new Date().toString();
+ const donationLocation = "Feni, Bangladesh";
+ const donationPurpose = "famine-2024";
      
-     historyItem.innerHTML = `
-     <p class="font-bold">${newBalance.toFixed(2)} Taka is Donated for famine-2024 at Feni, Bangladesh</p>
-     <p class="text-xl font-bold">${new Date().toLocaleDateString()}</p>
-     `
-     
-     const historyContainer = document.getElementById('history-list');
-     historyContainer.appendChild(historyItem);
+historyItem.innerHTML = `
+<p class="font-bold">${newBalance.toFixed(2)} Taka is donate for ${donationPurpose} at ${donationLocation}</p>
+<p class="text-sm">Date: ${currentDateTime}</p>
+`
+    
+const historyContainer = document.getElementById('history-list');
+historyContainer.appendChild(historyItem);
 })
 
 

@@ -11,6 +11,10 @@ if(cashOut <= 0 || isNaN(cashOut)){
 }; 
   
 const balance = getTextFieldValueById('cash-out');
+if(cashOut > balance){
+  alert('You do not have enough balance to cash out this amount');
+  return;
+}
 const newBalance = balance - cashOut;
 document.getElementById('cash-out').innerText = newBalance.toFixed(2);
 
